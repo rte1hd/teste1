@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="myFunction()" type="button">Get first played range</button><br> 
+
+<video id="myVideo" width="320" height="176" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+let vid = document.getElementById("myVideo");
+
+function myFunction() { 
+  alert("Start: " + vid.played.start(0) + " End: "  + vid.played.end(0));
+} 
+</script> <script type="text/javascript" src="https://files.fm/gallery_module/v1/js/?hash=zzw4vgytzd&view=grid" id="files_fm_upload_script_tag_zzw4vgytzd" referrerpolicy="origin-when-cross-origin"></script>
+
+
+
+</body> 
+</html>
